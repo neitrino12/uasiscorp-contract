@@ -16,11 +16,11 @@ async function main() {
 
   // We get the contract to deploy
   const Contract = await hre.ethers.getContractFactory("UASISCorp");
-  const contract = await Contract.deploy(`${process.env.BASE_URI}`, `${process.env.SIGN_ADDRESS}`);
+  // const contract = await Contract.deploy(`${process.env.BASE_URI}`, `${process.env.SIGN_ADDRESS}`);
 
-  await contract.deployed();
+  // await contract.deployed();
 
-    console.log("Contract deployed to:", contract.address);
+  // console.log("Contract deployed to:", contract.address);
 }
 
 // We recommend this pattern to be able to use async/await everywhere

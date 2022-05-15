@@ -73,8 +73,6 @@ describe("UASISCorp", function () {
     it('should totalSupply', async function () {
         expect(await contract.totalSupply(1)).to.equal(5);
         expect(await contract.totalSupply(2)).to.equal(0);
-
-        console.log(contract.functions)
     });
 
     async function getSignature(addr, price, tokenId, amount) {
